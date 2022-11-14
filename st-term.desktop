@@ -1,5 +1,5 @@
-[Destop Entry]
-Version=0.9
+[Desktop Entry]
+Version=22.11
 Type=Application
 Exec=st-term
 TryExec=st-term
