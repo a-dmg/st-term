@@ -1592,7 +1592,7 @@ xdrawcursor(int cx, int cy, Glyph g, int ox, int oy, Glyph og)
 			XftDrawRect(xw.draw, &drawcol,
 					borderpx + cx * win.cw,
 					borderpx + (cy + 1) * win.ch - \
-						cursorthickness,
+					cursorthickness,
 					win.cw, cursorthickness);
 			break;
 		case 5: /* Blinking bar */
