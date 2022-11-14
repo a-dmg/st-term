@@ -1,0 +1,13 @@
+[Destop Entry]
+Version=0.9
+Type=Application
+Exec=st-term
+TryExec=st-term
+Icon=utilities-terminal
+Terminal=false
+Categories=System;TerminalEmulator
+
+Name=st-term
+GenericName=Terminal
+Comment=st is a simple terminal emulator for X
+StartupWMClass=st-256color

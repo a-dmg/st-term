@@ -1,5 +1,21 @@
 # st version
-VERSION = 0.9
+VERSION =  22.11
+REVISION = 0
+
+DPKG_PKG          = st-term_$(VERSION)-$(REVISION)_amd64
+DPKG_TERMINFO_PKG = st-term-terminfo_$(VERSION)-$(REVISION)_amd64
+
+GIT_USER  = $(shell git config --get --local user.name)
+GIT_EMAIL = $(shell git config --get --local user.email)
+
+DPKG_PACKAGE     = Package: st-term
+DPKG_VERSION     = Version: $(VERSION)
+DPKG_ARCH        = Architecture: amd64
+DPKG_MAINTAINER  = Maintainer: $(GIT_USER) <$(GIT_EMAIL)>
+DPKG_DESCRIPTION = Description: st-term is a simple terminal emulator fot X.
+
+DPKG_TERMINFO_PACKAGE = Package: st-term-info
+DPKG_TERMINFO_DESCRIPTION = Description: st-term-info only contains the terminfo entry.
 
 # Customize below to fit your system
 
