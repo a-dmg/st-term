@@ -136,12 +136,17 @@ static unsigned int defaultrcs = 257;
 
 /*
  * Default shape of cursor
+ * 0: Blinking Block ("█")
+ * 1: Blinking Block (default)
  * 2: Block ("█")
+ * 3: Blinking Underline ("_")
  * 4: Underline ("_")
+ * 5: Blinking Bar ("|")
  * 6: Bar ("|")
- * 7: Snowman ("☃")
+ * 7: Blinking Snowman ("☃")
+ * 8: Snowman ("☃")
  */
-static unsigned int cursorshape = 2;
+static unsigned int cursorshape = 3;
 
 /*
  * Default columns and rows numbers
