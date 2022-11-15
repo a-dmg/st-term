@@ -189,6 +189,8 @@ const unsigned mousescrollspeed = 12;
 static MouseShortcut mshortcuts[] = {
 	/* mask                 button   function        argument                 release */
 	{ XK_ANY_MOD,           Button2, selpaste,       {.i = 0},                1 },
+	{ ControlMask,          Button4, zoom,           {.f = +1},               0 },
+	{ ControlMask,          Button5, zoom,           {.f = -1},               0 },
 	{ XK_ANY_MOD,           Button4, kscrollup,      {.i = mousescrollspeed}, 0 },
 	{ XK_ANY_MOD,           Button5, kscrolldown,    {.i = mousescrollspeed}, 0 },
 };
@@ -203,6 +205,8 @@ static Shortcut shortcuts[] = {
 	{ ControlMask,          XK_Print,       toggleprinter,  {.i =  0} },
 	{ ShiftMask,            XK_Print,       printscreen,    {.i =  0} },
 	{ XK_ANY_MOD,           XK_Print,       printsel,       {.i =  0} },
+	{ TERMMOD,              XK_plus,        zoom,           {.f = +1} },
+	{ TERMMOD,              XK_underscore,  zoom,           {.f = -1} },
 	{ TERMMOD,              XK_Prior,       zoom,           {.f = +1} },
 	{ TERMMOD,              XK_Next,        zoom,           {.f = -1} },
 	{ TERMMOD,              XK_Home,        zoomreset,      {.f =  0} },
