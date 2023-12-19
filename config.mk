@@ -1,6 +1,6 @@
 # st version
-VERSION =  22.11
-REVISION = 1
+VERSION =  23.12
+REVISION = 2
 
 DPKG_PKG          = st-term_$(VERSION)-$(REVISION)_amd64
 DPKG_TERMINFO_PKG = st-term-terminfo_$(VERSION)-$(REVISION)_amd64
