@@ -491,6 +491,17 @@ static char ascii_printable[] =
 	"@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_"
 	"`abcdefghijklmnopqrstuvwxyz{|}~";
 
+/*
+ * Open urls starting with urlprefixes, contatining urlchars
+ * by passing as ARG1 to urlhandler.
+ */
+char* urlhandler = "xdg-open";
+char urlchars[] =
+	"ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+	"abcdefghijklmnopqrstuvwxyz"
+	"0123456789-._~:/?#@!$&'*+,;=%";
+char* urlprefixes[] = {"http://", "https://", NULL};
+
 /**
  * Undercurl style. Set UNDERCURL_STYLE to one of the available styles.
  *
